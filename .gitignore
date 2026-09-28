@@ -1,7 +1,7 @@
 __pycache__/
 *.py[cod]
 .venv/
-.env
+dist/
 logs/*.jsonl
 # 注意：reports/ 下的运维报告（txt/csv）是交付物，不能忽略
 data/corpus/processed/
