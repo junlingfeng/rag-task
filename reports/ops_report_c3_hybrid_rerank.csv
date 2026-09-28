@@ -1,0 +1,22 @@
+metric,value
+requests,3157
+p50_latency_ms,3.84
+p90_latency_ms,6.81
+p95_latency_ms,17.23
+latency_max_ms,34.45
+prompt_tokens,1592115
+completion_tokens,150904
+total_tokens,1743019
+avg_prompt_tokens,504.3
+avg_completion_tokens,47.8
+cache_hit_rate,0.3022
+refusal_rate,0.3231
+refusal_by_reason,"{""no_evidence"": 21, ""out_of_scope"": 861, ""safety"": 138}"
+answer_rate,0.6769
+mean_support_score,0.6186
+answer_compliance_rate,0.6182
+answer_compliance_source,online_proxy(support_score>=0.30 & has_citation)
+cost_usd_total,0.32936
+cost_usd_per_1k_calls,0.1043
+rerank_timeout_rate,0.0
+config_versions,"[""c3_hybrid_rerank""]"

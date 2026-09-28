@@ -1,0 +1,73 @@
+# 基础配置：所有环境共用。切换检索模式与重排只需修改本文件对应字段，
+# 无需改动任何代码（对应需求 FR1）。
+app:
+  config_version: v1
+  prompt_version: p1
+  corpus_version: kb_v1
+
+retrieval:
+  mode: hybrid            # vector | hybrid
+  conversation_rewrite: rules   # rules=拼接上一轮问题 | llm=模型改写成完整问句
+  top_k: 20               # 召回数量
+  top_n: 5                # 送入生成的证据数量
+  fusion: weighted        # rrf | weighted（weighted 由检索配置扫描实验选出，见 RUNBOOK 说明）
+  rrf_k: 60
+  vector_weight: 0.3      # fusion=weighted 时生效；偏向词法通道（扫描实验最优）
+  min_score: 0.05         # 低于该分数视为无相关证据
+  store: local            # local | qdrant
+
+embedding:
+  backend: hashing        # hashing | sentence_transformers | openai
+  model: sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+  dim: 512                # hashing 后端的向量维度
+
+rerank:
+  enabled: false          # 纯配置开关
+  backend: lexical        # lexical | onnx_cross_encoder | cross_encoder | none
+  model: models/bge-reranker-base   # onnx_cross_encoder 用本地目录；cross_encoder 用模型名
+  onnx_file: onnx/model_int8.onnx
+  max_length: 256
+  max_candidates: 10      # 实测 20 条候选需 1553ms（超时降级），10 条约 370-610ms
+  top_n: 5
+  timeout_ms: 800         # 超时即回退到融合结果
+
+generation:
+  backend: offline        # offline | openai
+  model: gpt-4o-mini
+  base_url: null
+  api_key_env: OPENAI_API_KEY
+  temperature: 0
+  max_output_tokens: 600
+  require_citation: true
+
+guardrails:
+  injection_detection: true
+  scope_check: true
+  min_support_score: 0.30
+  min_top_score: 0.12
+  scope_coverage_min: 0.15  # 越界判定：问题内容词在最佳 chunk 的覆盖率下限（标定值）
+  scope_oov_max: 0.50       # 越界判定：内容词二元组未登录率上限（标定值）
+  scope_oov_unigram_max: 0.40  # 越界判定：内容词单字未登录率上限（两个 OOV 同时越界才拒答）
+  pii:
+    redact_output: true
+    redact_logs: true
+    mode: placeholder     # placeholder | hash
+
+cache:
+  enabled: true
+  backend: memory         # memory | redis
+  mode: exact             # exact | semantic
+  similarity_threshold: 0.95
+  ttl_seconds: 86400
+  max_entries: 1000
+
+observability:
+  log_format: json
+  log_dir: logs
+  log_redaction: hash
+  redact_query_in_logs: true
+
+eval:
+  judge: rule_based       # rule_based | llm
+  judge_model: null
+  seed: 20260918

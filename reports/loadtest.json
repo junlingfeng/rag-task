@@ -1,0 +1,13 @@
+{
+  "config_version": "c3_hybrid_rerank",
+  "concurrency": 5,
+  "requests": 200,
+  "errors": 0,
+  "wall_time_s": 0.62,
+  "throughput_rps": 324.74,
+  "p50_ms": 5.48,
+  "p90_ms": 38.15,
+  "p95_ms": 39.71,
+  "max_ms": 42.32,
+  "meets_p90_10s": true
+}

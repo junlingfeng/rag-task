@@ -1,0 +1,863 @@
+{
+  "corpus_version": "kb_v1",
+  "documents": [
+    {
+      "doc_id": "DOC-HB-01",
+      "title_zh": "员工手册 · 休假与考勤",
+      "title_en": "Employee Handbook - Leave and Attendance",
+      "doc_type": "handbook",
+      "lang": "zh",
+      "is_scanned": false,
+      "path": "data/corpus/raw/DOC-HB-01.md",
+      "facts": [
+        "annual_leave_days",
+        "sick_leave_deadline",
+        "overtime_compensation",
+        "remote_work_days"
+      ],
+      "pages": null,
+      "ocr_sidecar": null
+    },
+    {
+      "doc_id": "DOC-HB-02",
+      "title_zh": "员工手册 · 雇佣与薪酬",
+      "title_en": "Employee Handbook - Employment and Rewards",
+      "doc_type": "handbook",
+      "lang": "en",
+      "is_scanned": false,
+      "path": "data/corpus/raw/DOC-HB-02.md",
+      "facts": [
+        "probation_period",
+        "travel_reimbursement_window",
+        "resignation_notice",
+        "training_budget"
+      ],
+      "pages": null,
+      "ocr_sidecar": null
+    },
+    {
+      "doc_id": "DOC-CP-01",
+      "title_zh": "合规指南 · 商业行为准则",
+      "title_en": "Compliance Guide - Code of Business Conduct",
+      "doc_type": "compliance",
+      "lang": "zh",
+      "is_scanned": false,
+      "path": "data/corpus/raw/DOC-CP-01.md",
+      "facts": [
+        "gift_value_limit",
+        "conflict_of_interest",
+        "third_party_due_diligence",
+        "anti_corruption_training"
+      ],
+      "pages": null,
+      "ocr_sidecar": null
+    },
+    {
+      "doc_id": "DOC-CP-02",
+      "title_zh": "合规指南 · 信息与数据保护",
+      "title_en": "Compliance Guide - Information and Data Protection",
+      "doc_type": "compliance",
+      "lang": "mixed",
+      "is_scanned": true,
+      "path": "data/corpus/raw/DOC-CP-02.pdf",
+      "facts": [
+        "data_classification",
+        "trading_blackout",
+        "audit_record_retention",
+        "reporting_channel"
+      ],
+      "pages": 2,
+      "ocr_sidecar": "DOC-CP-02.ocr.txt"
+    },
+    {
+      "doc_id": "DOC-TS-01",
+      "title_zh": "技术规范 · 开放平台接入",
+      "title_en": "Technical Specification - Open Platform Access",
+      "doc_type": "tech_spec",
+      "lang": "en",
+      "is_scanned": false,
+      "path": "data/corpus/raw/DOC-TS-01.md",
+      "facts": [
+        "rate_limit",
+        "access_token_ttl",
+        "pagination_defaults",
+        "gateway_timeout"
+      ],
+      "pages": null,
+      "ocr_sidecar": null
+    },
+    {
+      "doc_id": "DOC-TS-02",
+      "title_zh": "技术规范 · 安全与可观测",
+      "title_en": "Technical Specification - Security and Observability",
+      "doc_type": "tech_spec",
+      "lang": "zh",
+      "is_scanned": false,
+      "path": "data/corpus/raw/DOC-TS-02.md",
+      "facts": [
+        "encryption_standard",
+        "log_retention",
+        "api_version_header",
+        "error_code_format"
+      ],
+      "pages": null,
+      "ocr_sidecar": null
+    },
+    {
+      "doc_id": "DOC-AR-01",
+      "title_zh": "架构文档 · 核心平台",
+      "title_en": "Architecture Document - Core Platform",
+      "doc_type": "architecture",
+      "lang": "mixed",
+      "is_scanned": false,
+      "path": "data/corpus/raw/DOC-AR-01.md",
+      "facts": [
+        "primary_database",
+        "message_queue",
+        "cache_cluster",
+        "api_gateway"
+      ],
+      "pages": null,
+      "ocr_sidecar": null
+    },
+    {
+      "doc_id": "DOC-AR-02",
+      "title_zh": "架构文档 · 部署与运维",
+      "title_en": "Architecture Document - Deployment and Operations",
+      "doc_type": "architecture",
+      "lang": "en",
+      "is_scanned": true,
+      "path": "data/corpus/raw/DOC-AR-02.pdf",
+      "facts": [
+        "deployment_topology",
+        "observability_stack",
+        "backup_policy",
+        "availability_sla"
+      ],
+      "pages": 1,
+      "ocr_sidecar": "DOC-AR-02.ocr.txt"
+    },
+    {
+      "doc_id": "DOC-HB-S01",
+      "title_zh": "员工手册补充规定 · 上海研发中心",
+      "title_en": "Handbook Supplement - Shanghai R&D Center",
+      "doc_type": "handbook",
+      "lang": "zh",
+      "is_scanned": false,
+      "path": "data/corpus/raw/DOC-HB-S01.md",
+      "facts": [],
+      "pages": null,
+      "ocr_sidecar": null
+    },
+    {
+      "doc_id": "DOC-HB-S02",
+      "title_zh": "员工手册补充规定 · 北京分部",
+      "title_en": "Handbook Supplement - Beijing Branch",
+      "doc_type": "handbook",
+      "lang": "en",
+      "is_scanned": false,
+      "path": "data/corpus/raw/DOC-HB-S02.md",
+      "facts": [],
+      "pages": null,
+      "ocr_sidecar": null
+    },
+    {
+      "doc_id": "DOC-HB-S03",
+      "title_zh": "员工手册补充规定 · 深圳交付中心",
+      "title_en": "Handbook Supplement - Shenzhen Delivery Center",
+      "doc_type": "handbook",
+      "lang": "zh",
+      "is_scanned": false,
+      "path": "data/corpus/raw/DOC-HB-S03.md",
+      "facts": [],
+      "pages": null,
+      "ocr_sidecar": null
+    },
+    {
+      "doc_id": "DOC-HB-S04",
+      "title_zh": "员工手册补充规定 · 新加坡办公室",
+      "title_en": "Handbook Supplement - Singapore Office",
+      "doc_type": "handbook",
+      "lang": "en",
+      "is_scanned": false,
+      "path": "data/corpus/raw/DOC-HB-S04.md",
+      "facts": [],
+      "pages": null,
+      "ocr_sidecar": null
+    },
+    {
+      "doc_id": "DOC-HB-S05",
+      "title_zh": "员工手册补充规定 · 香港分公司",
+      "title_en": "Handbook Supplement - Hong Kong Branch",
+      "doc_type": "handbook",
+      "lang": "zh",
+      "is_scanned": false,
+      "path": "data/corpus/raw/DOC-HB-S05.md",
+      "facts": [],
+      "pages": null,
+      "ocr_sidecar": null
+    },
+    {
+      "doc_id": "DOC-HB-S06",
+      "title_zh": "员工手册补充规定 · 东京代表处",
+      "title_en": "Handbook Supplement - Tokyo Representative Office",
+      "doc_type": "handbook",
+      "lang": "en",
+      "is_scanned": false,
+      "path": "data/corpus/raw/DOC-HB-S06.md",
+      "facts": [],
+      "pages": null,
+      "ocr_sidecar": null
+    },
+    {
+      "doc_id": "DOC-HB-S07",
+      "title_zh": "员工手册补充规定 · 伦敦办公室",
+      "title_en": "Handbook Supplement - London Office",
+      "doc_type": "handbook",
+      "lang": "zh",
+      "is_scanned": false,
+      "path": "data/corpus/raw/DOC-HB-S07.md",
+      "facts": [],
+      "pages": null,
+      "ocr_sidecar": null
+    },
+    {
+      "doc_id": "DOC-HB-S08",
+      "title_zh": "员工手册补充规定 · 纽约办公室",
+      "title_en": "Handbook Supplement - New York Office",
+      "doc_type": "handbook",
+      "lang": "en",
+      "is_scanned": false,
+      "path": "data/corpus/raw/DOC-HB-S08.md",
+      "facts": [],
+      "pages": null,
+      "ocr_sidecar": null
+    },
+    {
+      "doc_id": "DOC-CP-S01",
+      "title_zh": "合规指南补充规定 · 上海研发中心",
+      "title_en": "Compliance Supplement - Shanghai R&D Center",
+      "doc_type": "compliance",
+      "lang": "zh",
+      "is_scanned": false,
+      "path": "data/corpus/raw/DOC-CP-S01.md",
+      "facts": [],
+      "pages": null,
+      "ocr_sidecar": null
+    },
+    {
+      "doc_id": "DOC-CP-S02",
+      "title_zh": "合规指南补充规定 · 北京分部",
+      "title_en": "Compliance Supplement - Beijing Branch",
+      "doc_type": "compliance",
+      "lang": "en",
+      "is_scanned": false,
+      "path": "data/corpus/raw/DOC-CP-S02.md",
+      "facts": [],
+      "pages": null,
+      "ocr_sidecar": null
+    },
+    {
+      "doc_id": "DOC-CP-S03",
+      "title_zh": "合规指南补充规定 · 深圳交付中心",
+      "title_en": "Compliance Supplement - Shenzhen Delivery Center",
+      "doc_type": "compliance",
+      "lang": "zh",
+      "is_scanned": false,
+      "path": "data/corpus/raw/DOC-CP-S03.md",
+      "facts": [],
+      "pages": null,
+      "ocr_sidecar": null
+    },
+    {
+      "doc_id": "DOC-CP-S04",
+      "title_zh": "合规指南补充规定 · 新加坡办公室",
+      "title_en": "Compliance Supplement - Singapore Office",
+      "doc_type": "compliance",
+      "lang": "en",
+      "is_scanned": false,
+      "path": "data/corpus/raw/DOC-CP-S04.md",
+      "facts": [],
+      "pages": null,
+      "ocr_sidecar": null
+    },
+    {
+      "doc_id": "DOC-CP-S05",
+      "title_zh": "合规指南补充规定 · 香港分公司",
+      "title_en": "Compliance Supplement - Hong Kong Branch",
+      "doc_type": "compliance",
+      "lang": "zh",
+      "is_scanned": false,
+      "path": "data/corpus/raw/DOC-CP-S05.md",
+      "facts": [],
+      "pages": null,
+      "ocr_sidecar": null
+    },
+    {
+      "doc_id": "DOC-CP-S06",
+      "title_zh": "合规指南补充规定 · 东京代表处",
+      "title_en": "Compliance Supplement - Tokyo Representative Office",
+      "doc_type": "compliance",
+      "lang": "en",
+      "is_scanned": false,
+      "path": "data/corpus/raw/DOC-CP-S06.md",
+      "facts": [],
+      "pages": null,
+      "ocr_sidecar": null
+    },
+    {
+      "doc_id": "DOC-CP-S07",
+      "title_zh": "合规指南补充规定 · 伦敦办公室",
+      "title_en": "Compliance Supplement - London Office",
+      "doc_type": "compliance",
+      "lang": "zh",
+      "is_scanned": false,
+      "path": "data/corpus/raw/DOC-CP-S07.md",
+      "facts": [],
+      "pages": null,
+      "ocr_sidecar": null
+    },
+    {
+      "doc_id": "DOC-CP-S08",
+      "title_zh": "合规指南补充规定 · 纽约办公室",
+      "title_en": "Compliance Supplement - New York Office",
+      "doc_type": "compliance",
+      "lang": "en",
+      "is_scanned": false,
+      "path": "data/corpus/raw/DOC-CP-S08.md",
+      "facts": [],
+      "pages": null,
+      "ocr_sidecar": null
+    },
+    {
+      "doc_id": "DOC-TS-S01",
+      "title_zh": "技术规范补充规定 · 上海研发中心",
+      "title_en": "Technical Specification Supplement - Shanghai R&D Center",
+      "doc_type": "tech_spec",
+      "lang": "zh",
+      "is_scanned": false,
+      "path": "data/corpus/raw/DOC-TS-S01.md",
+      "facts": [],
+      "pages": null,
+      "ocr_sidecar": null
+    },
+    {
+      "doc_id": "DOC-TS-S02",
+      "title_zh": "技术规范补充规定 · 北京分部",
+      "title_en": "Technical Specification Supplement - Beijing Branch",
+      "doc_type": "tech_spec",
+      "lang": "en",
+      "is_scanned": false,
+      "path": "data/corpus/raw/DOC-TS-S02.md",
+      "facts": [],
+      "pages": null,
+      "ocr_sidecar": null
+    },
+    {
+      "doc_id": "DOC-TS-S03",
+      "title_zh": "技术规范补充规定 · 深圳交付中心",
+      "title_en": "Technical Specification Supplement - Shenzhen Delivery Center",
+      "doc_type": "tech_spec",
+      "lang": "zh",
+      "is_scanned": false,
+      "path": "data/corpus/raw/DOC-TS-S03.md",
+      "facts": [],
+      "pages": null,
+      "ocr_sidecar": null
+    },
+    {
+      "doc_id": "DOC-TS-S04",
+      "title_zh": "技术规范补充规定 · 新加坡办公室",
+      "title_en": "Technical Specification Supplement - Singapore Office",
+      "doc_type": "tech_spec",
+      "lang": "en",
+      "is_scanned": false,
+      "path": "data/corpus/raw/DOC-TS-S04.md",
+      "facts": [],
+      "pages": null,
+      "ocr_sidecar": null
+    },
+    {
+      "doc_id": "DOC-TS-S05",
+      "title_zh": "技术规范补充规定 · 香港分公司",
+      "title_en": "Technical Specification Supplement - Hong Kong Branch",
+      "doc_type": "tech_spec",
+      "lang": "zh",
+      "is_scanned": false,
+      "path": "data/corpus/raw/DOC-TS-S05.md",
+      "facts": [],
+      "pages": null,
+      "ocr_sidecar": null
+    },
+    {
+      "doc_id": "DOC-TS-S06",
+      "title_zh": "技术规范补充规定 · 东京代表处",
+      "title_en": "Technical Specification Supplement - Tokyo Representative Office",
+      "doc_type": "tech_spec",
+      "lang": "en",
+      "is_scanned": false,
+      "path": "data/corpus/raw/DOC-TS-S06.md",
+      "facts": [],
+      "pages": null,
+      "ocr_sidecar": null
+    },
+    {
+      "doc_id": "DOC-TS-S07",
+      "title_zh": "技术规范补充规定 · 伦敦办公室",
+      "title_en": "Technical Specification Supplement - London Office",
+      "doc_type": "tech_spec",
+      "lang": "zh",
+      "is_scanned": false,
+      "path": "data/corpus/raw/DOC-TS-S07.md",
+      "facts": [],
+      "pages": null,
+      "ocr_sidecar": null
+    },
+    {
+      "doc_id": "DOC-TS-S08",
+      "title_zh": "技术规范补充规定 · 纽约办公室",
+      "title_en": "Technical Specification Supplement - New York Office",
+      "doc_type": "tech_spec",
+      "lang": "en",
+      "is_scanned": false,
+      "path": "data/corpus/raw/DOC-TS-S08.md",
+      "facts": [],
+      "pages": null,
+      "ocr_sidecar": null
+    },
+    {
+      "doc_id": "DOC-AR-S01",
+      "title_zh": "架构文档补充规定 · 上海研发中心",
+      "title_en": "Architecture Supplement - Shanghai R&D Center",
+      "doc_type": "architecture",
+      "lang": "zh",
+      "is_scanned": false,
+      "path": "data/corpus/raw/DOC-AR-S01.md",
+      "facts": [],
+      "pages": null,
+      "ocr_sidecar": null
+    },
+    {
+      "doc_id": "DOC-AR-S02",
+      "title_zh": "架构文档补充规定 · 北京分部",
+      "title_en": "Architecture Supplement - Beijing Branch",
+      "doc_type": "architecture",
+      "lang": "en",
+      "is_scanned": false,
+      "path": "data/corpus/raw/DOC-AR-S02.md",
+      "facts": [],
+      "pages": null,
+      "ocr_sidecar": null
+    },
+    {
+      "doc_id": "DOC-AR-S03",
+      "title_zh": "架构文档补充规定 · 深圳交付中心",
+      "title_en": "Architecture Supplement - Shenzhen Delivery Center",
+      "doc_type": "architecture",
+      "lang": "zh",
+      "is_scanned": false,
+      "path": "data/corpus/raw/DOC-AR-S03.md",
+      "facts": [],
+      "pages": null,
+      "ocr_sidecar": null
+    },
+    {
+      "doc_id": "DOC-AR-S04",
+      "title_zh": "架构文档补充规定 · 新加坡办公室",
+      "title_en": "Architecture Supplement - Singapore Office",
+      "doc_type": "architecture",
+      "lang": "en",
+      "is_scanned": false,
+      "path": "data/corpus/raw/DOC-AR-S04.md",
+      "facts": [],
+      "pages": null,
+      "ocr_sidecar": null
+    },
+    {
+      "doc_id": "DOC-AR-S05",
+      "title_zh": "架构文档补充规定 · 香港分公司",
+      "title_en": "Architecture Supplement - Hong Kong Branch",
+      "doc_type": "architecture",
+      "lang": "zh",
+      "is_scanned": false,
+      "path": "data/corpus/raw/DOC-AR-S05.md",
+      "facts": [],
+      "pages": null,
+      "ocr_sidecar": null
+    },
+    {
+      "doc_id": "DOC-AR-S06",
+      "title_zh": "架构文档补充规定 · 东京代表处",
+      "title_en": "Architecture Supplement - Tokyo Representative Office",
+      "doc_type": "architecture",
+      "lang": "en",
+      "is_scanned": false,
+      "path": "data/corpus/raw/DOC-AR-S06.md",
+      "facts": [],
+      "pages": null,
+      "ocr_sidecar": null
+    },
+    {
+      "doc_id": "DOC-AR-S07",
+      "title_zh": "架构文档补充规定 · 伦敦办公室",
+      "title_en": "Architecture Supplement - London Office",
+      "doc_type": "architecture",
+      "lang": "zh",
+      "is_scanned": false,
+      "path": "data/corpus/raw/DOC-AR-S07.md",
+      "facts": [],
+      "pages": null,
+      "ocr_sidecar": null
+    },
+    {
+      "doc_id": "DOC-AR-S08",
+      "title_zh": "架构文档补充规定 · 纽约办公室",
+      "title_en": "Architecture Supplement - New York Office",
+      "doc_type": "architecture",
+      "lang": "en",
+      "is_scanned": false,
+      "path": "data/corpus/raw/DOC-AR-S08.md",
+      "facts": [],
+      "pages": null,
+      "ocr_sidecar": null
+    }
+  ],
+  "facts": [
+    {
+      "key": "annual_leave_days",
+      "doc_type": "handbook",
+      "anchor_zh": "15 个工作日带薪年假",
+      "anchor_en": "15 working days of paid annual leave",
+      "q_zh": "员工每年有多少天年假？",
+      "q_en": "How many days of annual leave are employees entitled to?",
+      "a_zh": "入职满一年后每个自然年度 15 个工作日带薪年假，需提前 3 个工作日申请。",
+      "a_en": "15 working days of paid annual leave per calendar year after one year of service, requested 3 working days in advance."
+    },
+    {
+      "key": "sick_leave_deadline",
+      "doc_type": "handbook",
+      "anchor_zh": "上午 09:30 前通过人事系统提交",
+      "anchor_en": "before 09:30 on the same day",
+      "q_zh": "请病假需要在什么时间之前提交？",
+      "q_en": "By what time must sick leave be submitted?",
+      "a_zh": "须在当日上午 09:30 前通过人事系统提交；连续超过 2 个工作日需提供医院证明。",
+      "a_en": "Before 09:30 on the same day; absences over 2 consecutive working days need a medical certificate."
+    },
+    {
+      "key": "probation_period",
+      "doc_type": "handbook",
+      "anchor_zh": "试用期为 6 个月",
+      "anchor_en": "probation period for new employees is 6 months",
+      "q_zh": "新员工的试用期是多久？",
+      "q_en": "How long is the probation period for new employees?",
+      "a_zh": "试用期为 6 个月，每季度进行一次绩效回顾。",
+      "a_en": "6 months, with a performance review each quarter."
+    },
+    {
+      "key": "travel_reimbursement_window",
+      "doc_type": "handbook",
+      "anchor_zh": "行程结束后 30 个自然日内提交报销",
+      "anchor_en": "within 30 calendar days after the trip ends",
+      "q_zh": "差旅报销需要在多久内提交？",
+      "q_en": "What is the deadline for submitting travel expenses?",
+      "a_zh": "行程结束后 30 个自然日内提交，逾期需部门负责人书面说明。",
+      "a_en": "Within 30 calendar days after the trip ends; late submissions need written justification."
+    },
+    {
+      "key": "overtime_compensation",
+      "doc_type": "handbook",
+      "anchor_zh": "调休有效期为 90 天",
+      "anchor_en": "valid for 90 days",
+      "q_zh": "加班折算的调休有效期是多久？",
+      "q_en": "How long is overtime time-off-in-lieu valid?",
+      "a_zh": "调休有效期为 90 天，逾期作废且不折现。",
+      "a_en": "90 days; unused balances expire and are not cashed out."
+    },
+    {
+      "key": "remote_work_days",
+      "doc_type": "handbook",
+      "anchor_zh": "每周最多可申请 2 天远程办公",
+      "anchor_en": "up to 2 remote working days per week",
+      "q_zh": "每周可以远程办公几天？",
+      "q_en": "How many remote working days are allowed per week?",
+      "a_zh": "每周最多 2 天，需提前一个工作日审批，核心会议日不得远程。",
+      "a_en": "Up to 2 days per week, approved one working day in advance; core meeting days are on-site."
+    },
+    {
+      "key": "resignation_notice",
+      "doc_type": "handbook",
+      "anchor_zh": "提前 30 天提交书面通知",
+      "anchor_en": "must give 30 days written notice",
+      "q_zh": "离职需要提前多久通知公司？",
+      "q_en": "How much notice is required for resignation?",
+      "a_zh": "提前 30 天提交书面通知，并完成交接与资产归还。",
+      "a_en": "30 days written notice, plus handover and asset return."
+    },
+    {
+      "key": "training_budget",
+      "doc_type": "handbook",
+      "anchor_zh": "8000 元培训预算",
+      "anchor_en": "annual training budget of CNY 8000",
+      "q_zh": "员工的年度培训预算是多少？",
+      "q_en": "What is the annual training budget per employee?",
+      "a_zh": "每人每自然年度 8000 元，用于外部课程与认证考试，需事先审批。",
+      "a_en": "CNY 8000 per employee per calendar year for external courses and certifications, subject to prior approval."
+    },
+    {
+      "key": "gift_value_limit",
+      "doc_type": "compliance",
+      "anchor_zh": "价值超过 200 元的礼品",
+      "anchor_en": "worth more than CNY 200",
+      "q_zh": "收受礼品的价值上限是多少？",
+      "q_en": "What is the value limit for accepting gifts?",
+      "a_zh": "不得超过 200 元，超限礼品须登记并上交合规部门。",
+      "a_en": "CNY 200; items above the limit must be registered and surrendered to Compliance."
+    },
+    {
+      "key": "conflict_of_interest",
+      "doc_type": "compliance",
+      "anchor_zh": "5 个工作日内通过合规系统申报",
+      "anchor_en": "within 5 working days of becoming aware",
+      "q_zh": "发现利益冲突后需要在多久内申报？",
+      "q_en": "How soon must a conflict of interest be declared?",
+      "a_zh": "在知悉后的 5 个工作日内通过合规系统申报。",
+      "a_en": "Within 5 working days of becoming aware, via the compliance system."
+    },
+    {
+      "key": "data_classification",
+      "doc_type": "compliance",
+      "anchor_zh": "分为 4 级",
+      "anchor_en": "classified into 4 levels",
+      "q_zh": "公司数据分为几个等级？",
+      "q_en": "How many data classification levels does the company use?",
+      "a_zh": "分为 4 级：公开、内部、机密、绝密；机密及以上不得存于个人设备。",
+      "a_en": "4 levels: Public, Internal, Confidential, Restricted; Confidential and above must not be stored on personal devices."
+    },
+    {
+      "key": "trading_blackout",
+      "doc_type": "compliance",
+      "anchor_zh": "财报发布前 30 天",
+      "anchor_en": "30 days before quarterly earnings release",
+      "q_zh": "财报前的禁止交易窗口有多长？",
+      "q_en": "How long is the trading blackout before earnings?",
+      "a_zh": "财报发布前 30 天至发布后 2 个交易日内禁止交易。",
+      "a_en": "From 30 days before the release until 2 trading days after."
+    },
+    {
+      "key": "reporting_channel",
+      "doc_type": "compliance",
+      "anchor_zh": "合规邮箱",
+      "anchor_en": "compliance mailbox",
+      "q_zh": "合规举报的渠道有哪些？",
+      "q_en": "What channels are available for compliance reporting?",
+      "a_zh": "可通过合规邮箱或热线举报，支持实名与匿名，受理后 10 个工作日内反馈。",
+      "a_en": "Compliance mailbox or hotline, anonymous reporting supported, with feedback within 10 working days."
+    },
+    {
+      "key": "audit_record_retention",
+      "doc_type": "compliance",
+      "anchor_zh": "至少保存 7 年",
+      "anchor_en": "retained for at least 7 years",
+      "q_zh": "合规审计记录需要保存多久？",
+      "q_en": "How long must compliance audit records be retained?",
+      "a_zh": "至少保存 7 年，到期销毁需合规负责人与法务共同审批。",
+      "a_en": "At least 7 years; destruction requires joint approval by Compliance Head and Legal."
+    },
+    {
+      "key": "third_party_due_diligence",
+      "doc_type": "compliance",
+      "anchor_zh": "签约前必须完成第三方尽职调查",
+      "anchor_en": "before signing with external suppliers",
+      "q_zh": "第三方尽调需要在什么时候完成？",
+      "q_en": "When must third-party due diligence be completed?",
+      "a_zh": "必须在签约前完成；高风险主体还需提交合规委员会审议。",
+      "a_en": "Before signing; high-risk entities also require Compliance Committee review."
+    },
+    {
+      "key": "anti_corruption_training",
+      "doc_type": "compliance",
+      "anchor_zh": "不少于 2 小时的反腐败",
+      "anchor_en": "at least 2 hours of anti-corruption",
+      "q_zh": "每年的反腐培训要求多少小时？",
+      "q_en": "How many hours of anti-corruption training are required annually?",
+      "a_zh": "每年不少于 2 小时，未完成者不得参与晋升评审。",
+      "a_en": "At least 2 hours per year; completion is required for promotion review."
+    },
+    {
+      "key": "rate_limit",
+      "doc_type": "tech_spec",
+      "anchor_zh": "限制 1000 QPS",
+      "anchor_en": "limited to 1000 QPS per tenant",
+      "q_zh": "接口的速率限制是多少？",
+      "q_en": "What is the API rate limit?",
+      "a_zh": "每个租户 1000 QPS，超出返回 429 并给出重试等待时间。",
+      "a_en": "1000 QPS per tenant; exceeding it returns 429 with retry-after."
+    },
+    {
+      "key": "access_token_ttl",
+      "doc_type": "tech_spec",
+      "anchor_zh": "访问令牌有效期为 3600 秒",
+      "anchor_en": "Access tokens are valid for 3600 seconds",
+      "q_zh": "访问令牌的有效期是多久？",
+      "q_en": "How long is an access token valid?",
+      "a_zh": "访问令牌有效期 3600 秒，刷新令牌 14 天。",
+      "a_en": "Access tokens 3600 seconds; refresh tokens 14 days."
+    },
+    {
+      "key": "log_retention",
+      "doc_type": "tech_spec",
+      "anchor_zh": "在线保留 180 天",
+      "anchor_en": "retained online for 180 days",
+      "q_zh": "应用日志在线保留多久？",
+      "q_en": "How long are application logs retained online?",
+      "a_zh": "在线保留 180 天，归档保留 2 年，且不得记录明文敏感信息。",
+      "a_en": "180 days online, 2 years archived, with no plaintext sensitive data."
+    },
+    {
+      "key": "encryption_standard",
+      "doc_type": "tech_spec",
+      "anchor_zh": "静态存储采用 AES-256 加密",
+      "anchor_en": "at rest uses AES-256 encryption",
+      "q_zh": "数据传输和存储分别用什么加密标准？",
+      "q_en": "Which encryption standards are used for data at rest and in transit?",
+      "a_zh": "静态存储 AES-256，传输 TLS 1.3，禁用 TLS 1.0/1.1。",
+      "a_en": "AES-256 at rest and TLS 1.3 in transit; TLS 1.0/1.1 are prohibited."
+    },
+    {
+      "key": "pagination_defaults",
+      "doc_type": "tech_spec",
+      "anchor_zh": "默认每页返回 20 条记录",
+      "anchor_en": "20 records per page by default",
+      "q_zh": "列表接口默认每页返回多少条？",
+      "q_en": "How many records does a list endpoint return per page by default?",
+      "a_zh": "默认 20 条，单页最大 200 条。",
+      "a_en": "20 by default, maximum 200 per page."
+    },
+    {
+      "key": "gateway_timeout",
+      "doc_type": "tech_spec",
+      "anchor_zh": "超时设置为 30 秒",
+      "anchor_en": "times out synchronous requests after 30 seconds",
+      "q_zh": "API 网关的超时时间是多少？",
+      "q_en": "What is the API gateway timeout?",
+      "a_zh": "同步请求 30 秒，超时返回 504，批处理需改用异步接口。",
+      "a_en": "30 seconds for synchronous requests, returning 504; batch work must use the async API."
+    },
+    {
+      "key": "api_version_header",
+      "doc_type": "tech_spec",
+      "anchor_zh": "请求头 X-API-Version 指定",
+      "anchor_en": "X-API-Version header",
+      "q_zh": "如何指定接口版本？",
+      "q_en": "How is the API version specified?",
+      "a_zh": "通过请求头 X-API-Version 指定，默认 v2，旧版本有 12 个月过渡期。",
+      "a_en": "Via the X-API-Version header, defaulting to v2, with a 12-month transition for deprecated versions."
+    },
+    {
+      "key": "error_code_format",
+      "doc_type": "tech_spec",
+      "anchor_zh": "错误码为 5 位数字",
+      "anchor_en": "Error codes are 5 digits",
+      "q_zh": "错误码的格式是什么？",
+      "q_en": "What is the error code format?",
+      "a_zh": "5 位数字，前两位为服务域，后三位为具体错误，响应需含 trace_id。",
+      "a_en": "5 digits: two for the service domain, three for the specific error, with trace_id in the response."
+    },
+    {
+      "key": "primary_database",
+      "doc_type": "architecture",
+      "anchor_zh": "PostgreSQL 16 主从集群",
+      "anchor_en": "PostgreSQL 16 primary-replica cluster",
+      "q_zh": "核心交易数据使用什么数据库？",
+      "q_en": "Which database stores core transactional data?",
+      "a_zh": "PostgreSQL 16 主从集群，同步复制，读请求路由至只读副本。",
+      "a_en": "A PostgreSQL 16 primary-replica cluster with synchronous replication; reads go to replicas."
+    },
+    {
+      "key": "message_queue",
+      "doc_type": "architecture",
+      "anchor_zh": "配置 3 副本与 acks=all",
+      "anchor_en": "use 3 replicas with acks=all",
+      "q_zh": "消息队列的副本配置是怎样的？",
+      "q_en": "What replication is configured for the message queue?",
+      "a_zh": "Kafka 关键主题配置 3 副本与 acks=all。",
+      "a_en": "Kafka critical topics use 3 replicas with acks=all."
+    },
+    {
+      "key": "cache_cluster",
+      "doc_type": "architecture",
+      "anchor_zh": "6 节点 Redis 集群",
+      "anchor_en": "6-node Redis cluster",
+      "q_zh": "缓存集群有多少个节点？",
+      "q_en": "How many nodes are in the cache cluster?",
+      "a_zh": "6 节点 Redis 集群，一致性哈希分片，热点数据 5 分钟过期。",
+      "a_en": "A 6-node Redis cluster with consistent hashing; hot data expires in 5 minutes."
+    },
+    {
+      "key": "api_gateway",
+      "doc_type": "architecture",
+      "anchor_zh": "统一网关 Kong 接入",
+      "anchor_en": "unified Kong gateway",
+      "q_zh": "外部流量通过什么网关接入？",
+      "q_en": "Which gateway handles external traffic?",
+      "a_zh": "统一网关 Kong，负责认证、限流、灰度路由与访问日志。",
+      "a_en": "The unified Kong gateway, handling authentication, rate limiting, canary routing and access logging."
+    },
+    {
+      "key": "deployment_topology",
+      "doc_type": "architecture",
+      "anchor_zh": "跨 3 个可用区运行",
+      "anchor_en": "across 3 availability zones",
+      "q_zh": "服务部署在几个可用区？",
+      "q_en": "How many availability zones are services deployed across?",
+      "a_zh": "跨 3 个可用区，每服务至少 2 个副本并配置反亲和性。",
+      "a_en": "3 availability zones, with at least 2 replicas per service and anti-affinity."
+    },
+    {
+      "key": "observability_stack",
+      "doc_type": "architecture",
+      "anchor_zh": "Prometheus 采集指标",
+      "anchor_en": "Prometheus for metrics",
+      "q_zh": "可观测体系由哪些组件构成？",
+      "q_en": "Which components make up the observability stack?",
+      "a_zh": "Prometheus 采集指标、Loki 汇聚日志、Tempo 存储链路追踪，通过 trace_id 关联。",
+      "a_en": "Prometheus for metrics, Loki for logs, Tempo for traces, correlated by trace_id."
+    },
+    {
+      "key": "backup_policy",
+      "doc_type": "architecture",
+      "anchor_zh": "全量备份并保留 35 天",
+      "anchor_en": "full daily with 35-day retention",
+      "q_zh": "数据库备份保留多久？",
+      "q_en": "How long are database backups retained?",
+      "a_zh": "每日全量备份保留 35 天，每 6 小时增量备份，季度恢复演练。",
+      "a_en": "Daily full backups retained 35 days, incremental every 6 hours, quarterly restore drills."
+    },
+    {
+      "key": "availability_sla",
+      "doc_type": "architecture",
+      "anchor_zh": "可用性目标为 99.95%",
+      "anchor_en": "availability target for core services is 99.95%",
+      "q_zh": "核心服务的可用性目标是多少？",
+      "q_en": "What is the availability target for core services?",
+      "a_zh": "99.95%，月度不可用时间预算约 21 分钟。",
+      "a_en": "99.95%, about 21 minutes of monthly unavailability budget."
+    }
+  ],
+  "stats": {
+    "documents": 40,
+    "scanned_documents": 2,
+    "facts": 32,
+    "languages": [
+      "en",
+      "mixed",
+      "zh"
+    ],
+    "doc_types": [
+      "architecture",
+      "compliance",
+      "handbook",
+      "tech_spec"
+    ]
+  }
+}

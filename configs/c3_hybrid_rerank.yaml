@@ -1,0 +1,9 @@
+# C3：hybrid + 重排
+app:
+  config_version: c3_hybrid_rerank
+
+retrieval:
+  mode: hybrid
+
+rerank:
+  enabled: true

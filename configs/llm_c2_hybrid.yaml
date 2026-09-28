@@ -1,0 +1,33 @@
+# 真实模型评测 · C2：hybrid，关闭重排
+app:
+  config_version: llm_c2_hybrid
+  corpus_version: kb_v1_onnx
+
+embedding:
+  backend: onnx
+  model: models/multilingual-minilm
+  onnx_file: onnx/model_int8.onnx
+  dim: 384
+
+retrieval:
+  mode: hybrid
+  fusion: weighted
+  vector_weight: 0.7      # 接入真实向量模型后重新标定（见 RUNBOOK）
+  conversation_rewrite: rules
+
+rerank:
+  enabled: false
+
+generation:
+  backend: openai
+  fallback_to_offline: false
+
+eval:
+  judge: llm
+
+cache:
+  enabled: false
+
+guardrails:
+  scope_check: false
+  min_support_score: 0.10

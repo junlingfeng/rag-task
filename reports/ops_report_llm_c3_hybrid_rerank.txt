@@ -1,0 +1,18 @@
+运维报告 (Minimal Operations Report)
+配置版本: llm_c3_hybrid_rerank
+
+请求总数: 1840
+P50 延迟: 1350.07 ms
+P90 延迟: 2099.64 ms
+P95 延迟: 2352.67 ms
+最大延迟: 11051.91 ms
+Token 用量: prompt=1592372 completion=135353 total=1727725
+平均 Token: prompt=865.4 completion=73.6
+每千次调用成本: 0.1739 USD
+缓存命中率: 0.1201
+拒答率: 0.4897（未作答占比，按原因细分见下）
+拒答原因分布: {"low_confidence": 193, "out_of_scope": 471, "safety": 161, "no_evidence": 76}
+作答率: 0.5103
+平均接地分数: 0.6475
+答案合规率(在线代理): 0.7199
+重排超时率: 0.156

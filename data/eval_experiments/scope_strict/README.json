@@ -1,0 +1,9 @@
+{
+  "single_turn_items": 64,
+  "multi_turn_conversations": 20,
+  "multi_turn_turns": 80,
+  "negatives": 72,
+  "total_scored_units": 216,
+  "zh_items": 78,
+  "en_items": 78
+}

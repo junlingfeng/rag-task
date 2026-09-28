@@ -1,0 +1,39 @@
+# 真实模型评测 · C3：hybrid + 重排
+app:
+  config_version: llm_c3_hybrid_rerank
+  corpus_version: kb_v1_onnx
+
+embedding:
+  backend: onnx
+  model: models/multilingual-minilm
+  onnx_file: onnx/model_int8.onnx
+  dim: 384
+
+retrieval:
+  mode: hybrid
+  fusion: weighted
+  vector_weight: 0.7
+  conversation_rewrite: rules
+
+rerank:
+  enabled: true
+  backend: onnx_cross_encoder   # 真实交叉编码器；词法重排会破坏语义排序
+  model: models/bge-reranker-base
+  onnx_file: onnx/model_int8.onnx
+  max_candidates: 10
+  max_length: 256
+  timeout_ms: 800
+
+generation:
+  backend: openai
+  fallback_to_offline: false
+
+eval:
+  judge: llm
+
+cache:
+  enabled: false
+
+guardrails:
+  scope_check: false
+  min_support_score: 0.10

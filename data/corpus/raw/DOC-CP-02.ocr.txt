@@ -1,0 +1,50 @@
+# 合规指南 · 信息与数据保护
+## Compliance Guide - Information and Data Protection
+
+## 数据分级 / Data Classification
+
+公司数据按敏感程度分为 4 级：公开、内部、机密、绝密；机密及以上级别的数据不得存储在个人设备。
+
+Company data is classified into 4 levels: Public, Internal, Confidential and Restricted. Data at Confidential level or above must not be stored on personal devices.
+
+## 内幕信息与交易窗口 / Inside Information
+
+在季度财报发布前 30 天至发布后 2 个交易日内，知悉内幕信息的员工不得买卖公司证券。
+
+From 30 days before quarterly earnings release until 2 trading days after, employees with inside information must not trade company securities.
+
+## 审计记录保存 / Audit Record Retention
+
+合规审计记录须至少保存 7 年，到期销毁须经合规负责人与法务共同审批。
+
+Compliance audit records must be retained for at least 7 years. Destruction after retention requires joint approval by the Compliance Head and Legal.
+
+## 举报渠道 / Whistleblowing Channel
+
+员工可通过合规邮箱 ethics-cn@example-internal.com 或热线 400-820-1234 进行实名或匿名举报，受理后 10 个工作日内反馈。
+
+Employees may report concerns via the compliance mailbox ethics-cn@example-internal.com or the hotline 400-820-1234, anonymously if preferred. Feedback is provided within 10 working days.
+
+## 记录与举证 / Records and Evidence
+
+合规相关审批、申报与调查记录由合规系统留存，业务部门不得自行删除或修改。调查过程遵循保密原则。
+
+Compliance approvals, declarations and investigation records are kept in the compliance system; business units must not delete or alter them. Investigations follow confidentiality principles.
+
+## 违规后果 / Consequences
+
+违反合规政策的员工可能面临纪律处分、解除劳动合同、追偿损失以及移交司法机关处理。管理层未尽监督职责的，一并追究管理责任。
+
+Employees violating compliance policy may face disciplinary action, termination, recovery of losses or referral to authorities. Managers who fail to supervise may be held accountable as well.
+
+## 政策复审机制 / Policy Review
+
+合规部门每年组织一次政策复审，并根据法规变化发布更新版本。员工有义务阅读最新版本并在系统中确认知悉。
+
+The Compliance function reviews these policies annually and publishes updates when regulations change. Employees are required to read the latest version and acknowledge it in the system.
+
+## 适用范围 / Scope
+
+本指南适用于全体董事、管理人员与员工，以及代表公司行事的第三方代理、顾问与供应商。第三方违反本指南可能导致合同解除。
+
+This guide applies to all directors, managers and employees, as well as third-party agents, consultants and suppliers acting on behalf of the company. Violations by third parties may lead to contract termination.

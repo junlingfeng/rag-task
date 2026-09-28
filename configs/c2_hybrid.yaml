@@ -1,0 +1,9 @@
+# C2：hybrid，关闭重排
+app:
+  config_version: c2_hybrid
+
+retrieval:
+  mode: hybrid
+
+rerank:
+  enabled: false

@@ -1,0 +1,35 @@
+# 真实模型评测 · C1：vector-only，关闭重排
+app:
+  config_version: llm_c1_vector
+  corpus_version: kb_v1_onnx      # 真实向量模型需要独立索引（向量空间不同）
+
+embedding:
+  backend: onnx
+  model: models/multilingual-minilm
+  onnx_file: onnx/model_int8.onnx
+  dim: 384
+
+retrieval:
+  mode: vector
+  fusion: rrf
+  conversation_rewrite: rules    # rules=零成本且合规更稳；llm 模式召回更高（见 A/B 结论）
+
+rerank:
+  enabled: false
+
+generation:
+  backend: openai
+  fallback_to_offline: false     # key/网络异常直接报错，避免静默降级污染指标
+
+eval:
+  judge: llm                     # 真实模型评测必须用 LLM judge：规则评判会惩罚合法改写
+
+cache:
+  enabled: false                 # 评测时关闭缓存：缓存命中会跳过检索，掩盖真实检索质量
+
+guardrails:
+  # 词法越界门在真实模型下会大量误伤正常问题（实测 50 条误拒答中 37 条来自它，
+  # 其中 18 条检索完全正确）。改为交由模型自判 + 自拒答识别，
+  # 实测拒答适当性 0.859 → 0.925。词法门仍可通过 scope_check=true 启用。
+  scope_check: false
+  min_support_score: 0.10        # 保留极低阈值兜底，防止明显无依据的回答被放行

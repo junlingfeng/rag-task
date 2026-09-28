@@ -1,0 +1,14 @@
+# 配合 scripts/mock_llm_server.py 使用：验证真实模型接入链路（请求/鉴权/解析/计费/错误处理）。
+# 它不产生真实模型效果，仅用于在没有外网或 Key 的机器上做链路自检。
+app:
+  config_version: mock_local
+
+generation:
+  backend: openai
+  model: mock-model
+  base_url: http://127.0.0.1:8123/v1
+  api_key_env: OPENAI_API_KEY
+  fallback_to_offline: false
+  timeout_seconds: 10
+  price_in_per_1m: 0.15
+  price_out_per_1m: 0.60

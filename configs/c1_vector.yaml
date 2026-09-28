@@ -1,0 +1,9 @@
+# C1：vector-only，关闭重排
+app:
+  config_version: c1_vector
+
+retrieval:
+  mode: vector
+
+rerank:
+  enabled: false
